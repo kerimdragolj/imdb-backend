@@ -27,20 +27,30 @@ JSON files for testing data you can find in "front-end/src/assets/jsons"
 Coppy contents of those files and post them on corresponding api routes
 
 genres > http://localhost:3030/genres
+
 actors > http://localhost:3030/actors
+
 movies > http://localhost:3030/movies
+
 shows  > http://localhost:3030/shows
 
 Now go on http://localhost:4200/login, login via created account and test app.
 
 
 API(BACK-END) ENDPOINTS:
+
 http://localhost:3030/authentication
+
 http://localhost:3030/genres
+
 http://localhost:3030/actors
+
 http://localhost:3030/movies
+
 http://localhost:3030/shows
+
 http://localhost:3030/ratings
+
 http://localhost:3030/users
 
 
