@@ -10,9 +10,13 @@ npm install
 npm start
 
 FRONT-END::
+
 http://localhost:4200
+
 http://localhost:4200/login
+
 http://localhost:4200/registration
+
 http://localhost:4200/about   ---> In progress
 
 Upon starting of app, you can create new accout on registration route, or via postman by posting 'fullname', 'email' and 'password' fields on http://localhost:3030/users.
