@@ -7,6 +7,7 @@
 Pull code
 
 npm install
+
 npm start
 
 FRONT-END::
