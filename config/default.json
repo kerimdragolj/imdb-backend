@@ -1,0 +1,47 @@
+{
+  "host": "localhost",
+  "port": 3030,
+  "public": "../public/",
+  "paginate": {
+    "default": 100,
+    "max": 100
+  },
+  "log": {
+    "appenders": [
+      {
+        "type": "console"
+      }
+    ],
+    "replaceConsole": "true",
+    "levels": {
+      "nodeJS": "Debug"
+    }
+  },
+  "authentication": {
+    "idField": "id",
+    "secret": "mysecret",
+    "strategies": [
+      "jwt",
+      "local"
+    ],
+    "path": "/authentication",
+    "service": "users",
+    "jwt": {
+      "header": {
+        "type": "access"
+      },
+      "audience": "https://localhost:3030",
+      "subject": "anonymous",
+      "issuer": "feathers",
+      "algorithm": "HS256",
+      "expiresIn": "8h"
+    },
+    "local": {
+      "entity": "user",
+      "service": "users",
+      "usernameField": "email",
+      "passwordField": "password"
+    }
+  },
+  "postgres": "postgres://postgres:@localhost:5432/imdb"
+}
