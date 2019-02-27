@@ -4,18 +4,19 @@
 
 ## About
 
+
 Pull code
+
+Setup 
+DATABASE: PostgreSQL - name: imdb, owner: postgres
+
 
 npm install
 
 npm start
 
 
-For both web and api... + setup database
-DATABASE: PostgreSQL - name: imdb, owner: postgres
-
-
-FRONT-END::
+FRONT-END ENDPOINTS::
 
 http://localhost:4200
 
@@ -23,7 +24,7 @@ http://localhost:4200/login
 
 http://localhost:4200/registration
 
-http://localhost:4200/about   ---> In progress
+http://localhost:4200/about
 
 Upon starting of app, you can create new accout on registration route, or via postman by posting 'fullname', 'email' and 'password' fields on http://localhost:3030/users.
 You have to register to receive token for authorizations on other routes. 
@@ -40,20 +41,12 @@ movies > http://localhost:3030/movies
 
 shows  > http://localhost:3030/shows
 
-Now go on http://localhost:4200/login, login via created account and test app.
+Now go on http://localhost:4200/login 
 
 
-API(BACK-END) ENDPOINTS:
+More of API(BACK-END) ENDPOINTS:
 
 http://localhost:3030/authentication
-
-http://localhost:3030/genres
-
-http://localhost:3030/actors
-
-http://localhost:3030/movies
-
-http://localhost:3030/shows
 
 http://localhost:3030/ratings
 
